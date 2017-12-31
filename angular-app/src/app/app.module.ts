@@ -17,6 +17,6 @@ import { VideoDetailComponent } from './video-detail/video-detail.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent, VideoListComponent, VideoDetailComponent]
+  bootstrap: [AppComponent, VideoListComponent]
 })
 export class AppModule { }
