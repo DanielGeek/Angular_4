@@ -3,3 +3,13 @@
     min-height: 800px;
     margin-bottom: 20px;
 }
+.main-container  a {
+    padding: 20px;
+}
+.btn-links {
+    margin-bottom: 20px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    cursor: pointer;
+}

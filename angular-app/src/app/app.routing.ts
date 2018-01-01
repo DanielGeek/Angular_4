@@ -9,7 +9,7 @@ import { VideoDetailComponent } from './video-detail/video-detail.component';
 const appRoutes: Routes = [
     {
         path: "",
-        component: VideoListComponent,
+        component: HomeComponent,
     },
     {
         path: "videos",
