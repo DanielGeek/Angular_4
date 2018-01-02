@@ -1,12 +1,14 @@
 <carousel>
-  <slide>
-        <img src="assets/images/nature/1.jpg" alt="First slide" style="display: block; width: 100%;">
+  <slide *ngFor='let imageObj of homeImageList'>
+        <a href="/videos/video-1" (click)='preventNormal($event)'>
+          <img [src]='imageObj.image' alt="{{ imageObj.title }}" style="display: block; width: 100%;">
+        </a>
         <div class="carousel-caption d-none d-md-block">
-          <h3>First slide label</h3>
+          <h3>{{ imageObj.title }}</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
-      </slide>
-  <slide>
+  </slide>
+  <!-- <slide>
         <img src="assets/images/nature/2.jpg" alt="First slide" style="display: block; width: 100%;">
         <div class="carousel-caption d-none d-md-block">
           <h3>First slide label</h3>
@@ -40,5 +42,5 @@
         <h3>Third slide label</h3>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </div>
-    </slide>
+    </slide> -->
   </carousel>
